@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -21,7 +21,7 @@ function NavBar() {
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 30) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
@@ -30,6 +30,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+    const [darkModeOn, setDarkMode] = useState(false);
+  
+    useEffect(() => {
+      document.documentElement.setAttribute("data-dark-mode", darkModeOn);
+    });
   return (
     <Navbar
       expanded={expand}
@@ -102,7 +107,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"
@@ -111,6 +116,19 @@ function NavBar() {
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
+            </Nav.Item> */}
+            <Nav.Item className="fork-btn">
+            <button
+			className="dark-mode__btn"
+			aria-pressed={darkModeOn}
+			onClick={() => setDarkMode(!darkModeOn)}
+		>
+			<span className="dark-mode__content-wrap">
+				<span className="dark-mode__icon" aria-hidden="true" />
+				dark mode{" "}
+				<span className="dark-mode__status">{darkModeOn ? " on" : " off"}</span>
+			</span>
+		</button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

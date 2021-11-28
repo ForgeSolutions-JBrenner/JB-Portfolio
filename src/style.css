@@ -7,7 +7,7 @@ html {
   
     --image-gradient: linear-gradient(
       to bottom left,
-      rgba(17, 16, 16, 0.678),
+      rgba(16, 16, 17, 0.678),
       rgba(12, 10, 22, 0.863)
     );
   
@@ -28,7 +28,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: 999999;
-    background-color: #0c0513;
+    background-color: #171717;
     background-image: url(./assets/pre.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +72,7 @@ html {
   /* Navbar Section  */
   /* --------- */
   .sticky {
-    background-color: #262b41 !important;
+    background-color: #171717 !important;
     transition: all 0.3s ease-out 0s !important;
     box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
     backdrop-filter: blur(15px) !important;
@@ -152,9 +152,10 @@ html {
   }
   
   .logo {
-    height: 1.4em !important;
-    width: 2.5em !important;
+    height: 1.8em !important;
+    width: 3.0em !important;
   }
+
   
   .navbar-nav .nav-link {
     color: white !important;
@@ -254,7 +255,8 @@ html {
   .home-section {
     position: relative;
     z-index: -1;
-    background-image: var(--image-gradient), url(./assets/home-bg.jpg);
+    height: 800px;
+    background-image: var(--image-gradient), url(./assets/homess.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     padding-bottom: 30px !important;
@@ -316,6 +318,13 @@ html {
   
   .home-about-section {
     position: relative;
+    background: transparent;
+    /* background: linear-gradient(
+      to bottom right,
+      #171717 45%,
+      rgba(8, 104, 194, 0.582)
+    ); */
+    
     padding-bottom: 70px !important;
     padding-top: 70px !important;
   }
@@ -370,7 +379,7 @@ html {
     border-radius: 50%;
     background: #008AFC;
     transition: 0.5s;
-    transform: scale(0.9);
+    transform: scale(.9);
     z-index: -1;
   }
   
@@ -383,12 +392,17 @@ html {
     color: #008AFC;
     box-shadow: 0 0 5px #00FC3F;
     text-shadow: 0 0 2px #00FC3F;
+    
   }
   
   .social-icons {
     display: inline-block !important;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .social-icons:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
   }
   
   .icon-colour {
@@ -399,7 +413,7 @@ html {
   /* Footer */
   /* --------- */
   .footer {
-    background-color: rgb(10, 4, 22);
+    background-color: #171717;
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
@@ -611,6 +625,17 @@ html {
     padding-bottom: 50px;
     justify-content: center;
   }
+
+  .resume-first-row {
+    justify-content: center;
+    position: relative;
+    width: 20%;
+  }
+
+  .dl-button {
+    width: auto;
+    background-color: black;
+  }
   
   .resume-left {
     padding-right: 80px !important;
@@ -737,3 +762,73 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
+.me {
+  border: 10px solid red;
+  height: 300px;
+  width: 450px;
+}
+
+
+:root {
+	--primary: #f3e2e3;
+	--secondary: #1c182f;
+	--accent: #009688;
+}
+
+:root[data-dark-mode="true"] {
+	--primary: #1c182f;
+	--secondary: #f3e2e3;
+	--accent: #89e2cb;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: blue;
+		--secondary: gray;
+		--accent: #89e2cb;
+	}
+}
+
+.dark-mode__btn {
+	border: none;
+	background-color: var(--secondary);
+	color: var(--primary);
+	font-size: 16px;
+	font-family: "Inconsolata", monospace;
+	cursor: pointer;
+}
+
+/* needed to easily vertically align button content since some browsers won't let a button be a flex container */
+.dark-mode__content-wrap {
+	display: flex;
+	align-items: center;
+	padding: 0.5em 0.75em;
+}
+
+.dark-mode__icon {
+	--sz: 1em;
+	display: inline-block;
+	width: var(--sz);
+	height: var(--sz);
+	margin-right: 0.75em;
+	background-image: linear-gradient(
+		to right,
+		var(--primary) 50%,
+		var(--secondary) 50%
+	);
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.1em var(--secondary), 0 0 0 0.2em var(--primary);
+}
+
+.dark-mode__status {
+	display: inline-block;
+	margin-left: 1ch;
+	/*  prevents reflow when switching between on and off */
+	min-width: 3ch;
+	text-align: left;
+}
+
+.dark-mode__btn:focus {
+	outline-color: var(--accent);
+}
+
