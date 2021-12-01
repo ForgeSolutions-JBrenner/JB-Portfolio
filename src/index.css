@@ -5,8 +5,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    to bottom right,
+    rgba(133, 132, 136, 0.904),
+    rgba(0, 138, 252, 1)
+    
   );
 }

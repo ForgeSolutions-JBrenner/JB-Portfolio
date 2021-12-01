@@ -528,14 +528,18 @@ html {
   
   .btn-primary {
     color: #fff !important;
-    background-color: #623686 !important;
-    border-color: #623686 !important;
+    background-color: #008AFC !important;
+    border-color: #008AFC !important;
   }
-  
+
   .btn-primary:hover {
     color: #fff !important;
-    background-color: #6d20c5d7 !important;
-    border-color: #6d20c5d7 !important;
+    background-color: #30a1ff !important;
+    border-color: #30a1ff !important;
+    box-shadow: 0 0 5px #008AFC;
+    text-shadow: 0 0 0px #008AFC;
+    transform: scale(1.05);
+    transition: 100ms transform ease-in;
   }
   .btn:focus {
     outline: none !important;
@@ -545,7 +549,7 @@ html {
     color: white !important;
     font-size: 2.3em !important;
     font-weight: 500 !important;
-    padding-top: 10px !important;
+    padding-top: 50px !important;
   }
   
   /* --------- */
@@ -561,16 +565,17 @@ html {
   }
   
   .tech-icons {
+    cursor: pointer;
     font-size: 4.5em !important;
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    border: 1.7px solid rgba(0, 138, 252, 1) !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    box-shadow: 4px 5px 4px 3px rgba(23, 23, 23, 1) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
@@ -582,9 +587,10 @@ html {
   }
   
   .tech-icons:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.02) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+    background-color: rgba(23, 23, 23, 1);
+    border: 2.2px solid rgba(0, 128, 210, 1)!important;
   }
   .tech-icon-images {
     padding: 20px !important;
@@ -624,8 +630,11 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
+    position: relative;
   }
-
+  .pdf {
+    box-shadow: 0 4px 60px #726d6d;  
+  }
   .resume-first-row {
     justify-content: center;
     position: relative;
@@ -636,6 +645,7 @@ html {
     width: auto;
     background-color: black;
   }
+  
   
   .resume-left {
     padding-right: 80px !important;

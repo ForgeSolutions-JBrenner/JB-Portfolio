@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../assets/avatar.svg";
+import myImg from "../../assets/bitmoji-avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,10 +8,11 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Home from './Home'
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="aboutme">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -69,6 +70,16 @@ function Home2() {
                 <a
                   href="https://github.com/soumyajit4419"
                   target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="#home"
+                  target=""
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
