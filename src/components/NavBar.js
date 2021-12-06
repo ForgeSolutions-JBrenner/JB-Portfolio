@@ -57,17 +57,16 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="#home"
+                to="/About"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -97,7 +96,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="https://blogs.soumyajit.tech/"
                 target="_blank"
@@ -105,7 +104,7 @@ function NavBar() {
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             {/* <Nav.Item className="fork-btn">
               <Button

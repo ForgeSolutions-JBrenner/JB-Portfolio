@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 // import homeLogo from "../../assets/aboutjb.svg";
-import myImg from "../../assets/computerjb.png";
+import myImg from "../../assets/About-jb.png";
 import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -44,7 +44,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
-      <About/>
+      <About id="about-section"/>
     </section>
   );
 }
