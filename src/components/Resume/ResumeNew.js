@@ -11,7 +11,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeGHlink =
-  "https://github.com/ForgeSolutions-JBrenner/JB-Portfolio/blob/main/src/assets/jb-nov-2021.pdf";
+  "https://github.com/ForgeSolutions-JBrenner/JB-Portfolio/blob/main/src/assets/jb-jan-2022.pdf";
   const ProfBars = [
     {
         Stack: "Front-end / Design", //Insert stack or technology you have experience in

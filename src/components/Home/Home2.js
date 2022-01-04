@@ -20,24 +20,26 @@ function Home2() {
               LET ME <span style={{color: "black"}}> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I have been working as a Full-stack Developer for the past 6 years in the Medical Device Industry. I have developed 20 Web Applications that are currently on the market today generating upwards of $20,000.00 per month.
+              I have been working as a Full-stack Developer for the past 6 years in the Medical Device Industry for a Fortune 500 company. I have developed over 20 Web Applications that are currently in production today for enhanced operational output, along with SASS products some of which generating upwards of $20,000.00 per month.
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in Front-end classics like
               <i>
-                <b style={{color: "black"}}> Javascript (React, Vue, Angular), HTML/Css, Php, and Python. </b>
+                <b style={{color: "black"}}> Javascript (React, Vue, Angular), HTML/Css and PHP. </b>
               </i>
-              <br />
+              <br /> As well as hold extensive experience in an array of back-end technologies like 
+              <b style={{color: "black"}}> Azure, AWS (Amazon Web Services), MongoDB and REST API Services. </b>
+              <br/>
               <br />
               My field of Interest's are building new &nbsp;
               <i>
                 <b style={{color: "black"}}>Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b style={{color: "black"}}>
-                  Deep Learning and Natural Launguage Processing.
+                  Machine Learning, Artificial Intelligence and Natural Launguage Processing.
                 </b>
               </i>
               <br />
-              <br />
+              {/* <br />
               Whenever possible, I also apply my passion for developing products
               with <b style={{color: "black"}}>Node.js</b> and
               <i>
@@ -48,8 +50,8 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b style={{color: "black"}}> React.js and Next.js</b>
-              </i>
+                <b style={{color: "black"}}> React.js, Next.js and Vue.js</b>
+              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
