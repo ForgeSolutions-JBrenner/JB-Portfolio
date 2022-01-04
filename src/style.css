@@ -255,7 +255,7 @@ html {
   .home-section {
     position: relative;
     z-index: -1;
-    height: 800px;
+    height: 100vh;
     background-image: var(--image-gradient), url(./assets/homess.jpg);
     background-position: top center;
     background-repeat: no-repeat;
