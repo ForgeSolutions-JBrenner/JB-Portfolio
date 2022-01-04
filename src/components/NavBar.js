@@ -77,7 +77,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/"
-                onClick={() => {updateExpanded(false); window.scrollTo(0, 1695)}}
+                onClick={() => {updateExpanded(false); window.scrollTo(0, 1700)}}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
