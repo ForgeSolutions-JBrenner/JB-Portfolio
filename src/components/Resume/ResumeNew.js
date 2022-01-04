@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, ProgressBar, } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "../../assets/jb-nov-2021.pdf";
+import pdf from "../../assets/jb-jan-2022.pdf";
 import Particle from "../Particle";
 import skills from '../../assets/skills.svg'
 import { AiOutlineDownload } from "react-icons/ai";
