@@ -9,6 +9,7 @@ import Type from "./Type";
 import TypeCode from "./TypeCode";
 import { BsCode } from "react-icons/bs";
 import About from "../About/About";
+import Projects from "../Projects/Projects";
 
 
 function Home() {
@@ -44,7 +45,8 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
-      <About id="about-section"/>
+      {/* <About/> */}
+      <Projects/>
     </section>
   );
 }

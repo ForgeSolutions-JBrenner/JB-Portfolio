@@ -70,7 +70,7 @@ function ResumeNew() {
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Col></Col>
         <Col xs={5}>
-          <Button className="dl-button">
+          <Button className="dl-button" href={pdf} target="_blank">
             <AiOutlineDownload style={{ marginRight: "10px" }} />
             Download CV
           </Button>
@@ -78,7 +78,8 @@ function ResumeNew() {
         <Col></Col>
       </Row>
       <Row className="resume">
-      <Col >
+        <Col></Col>
+      {/* <Col >
 						
                         <h1 className="h1">PROFICIENCY</h1>
 						{ProfBars.map((skill) => {
@@ -129,8 +130,8 @@ function ResumeNew() {
 							);
 						})}
                         
-					</Col>
-        <Col>
+					</Col> */}
+        <Col col="sm" >
           <Document
             file={pdf}
             onLoadSuccess={({ numPages }) => setNumPages(numPages)}
@@ -140,7 +141,7 @@ function ResumeNew() {
             ))}
           </Document>
         </Col>
-       
+        <Col></Col>
       </Row>
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Col></Col>
