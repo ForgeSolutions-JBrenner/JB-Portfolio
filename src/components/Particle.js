@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-tspartciles";
+import Particles from "react-tsparticles";
 
 function Particle() {
   return (

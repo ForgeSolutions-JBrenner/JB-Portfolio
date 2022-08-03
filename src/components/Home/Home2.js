@@ -20,7 +20,7 @@ function Home2() {
               LET ME <span style={{color: "black"}}> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I have been working as a Full-stack Developer for the past 6 years in the Medical Device Industry for a Fortune 500 company. I have developed over 20 Web Applications that are currently in production today for enhanced operational output, along with SASS products some of which generating upwards of $20,000.00 per month.
+              I have been working as a Full-stack Developer for the past 6 years in the Medical Device Industry for a Fortune 500 company. I have developed over 20 Web Applications that are currently in production today for enhanced operational output, along with SaaS products some of which generating upwards of $20,000.00 per month.
               <br />
               <br />I am fluent in Front-end classics like
               <i>

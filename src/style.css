@@ -476,6 +476,7 @@ html {
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
     height: 100% !important;
+    cursor: pointer;
   }
   .project-card-view:hover {
     transform: scale(1.02) !important;
@@ -516,8 +517,9 @@ html {
   
   .card-img-top {
     padding: 20px !important;
-    opacity: 0.8 !important;
-    border-radius: 10px !important;
+    opacity: 1 !important;
+    border-radius: 30px !important;
+    cursor: pointer;
   }
   
   .blog-img {

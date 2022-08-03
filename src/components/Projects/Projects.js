@@ -5,6 +5,7 @@ import Particle from "../Particle";
 
 import surpluslist from "../../assets/Projects/apphome.png";
 import chatify from "../../assets/Projects/chatify.png";
+import wmh from "../../assets/Projects/wmh.png";
 import editor from "../../assets/Projects/codeEditor.png";
 import dimsecloud from "../../assets/Projects/dimse-cloud.png";
 import suicide from "../../assets/Projects/suicide.png";
@@ -22,17 +23,6 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p> */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={dimsecloud}
-              isBlog={false}
-              title="DIMSE Cloud"
-              description="DIMSE Cloud is a medical imaging workflow system for radiology practices. DIMSE Cloud aims to bring all of the recent advancements in medical imaging capabilities to the foreforont for use of Medical Imaging practitioners without geographic barriers or high implementation costs."
-              techstack="Front-end: Vue.js | Back-end: AWS/GCP/Azure"
-              link="https://dimse-sample.web.app/"
-              githubLink="https://github.com/ForgeSolutions-JBrenner/dimseclouddev"
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -41,8 +31,32 @@ function Projects() {
               title="Surplus List"
               description="The only nationwide mortgage and tax overage lead site available on the market for real-estate investors. This tool combines the power of multiple REST-APIs to enable customers to Skip Trace Person names and Addresses to obtain contact information, Auction transaction reports and much more. This application currently grosses $50,000.00/month"
               techstack="Front-end: Next.js | Back-end: AWS, REST-API's, FTP Servers"
-              link="https://www.surpluslist.com/"
+              link="https://app.surpluslist.com/"
               githubLink="https://github.com/ForgeSolutions-JBrenner/Surplus-List-App-"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dimsecloud}
+              isBlog={false}
+              title="DIMSE Cloud"
+              description="DIMSE Cloud is a medical imaging workflow system for radiology practices. DIMSE Cloud aims to bring all of the recent advancements in medical imaging capabilities to the foreforont for use of Medical Imaging practitioners without geographic barriers or high implementation costs."
+              techstack="Front-end: Vue.js | Back-end: AWS/GCP/Azure"
+              link="https://www.dimsecloud.com/"
+              githubLink="https://github.com/ForgeSolutions-JBrenner/dimseclouddev"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={wmh}
+              isBlog={false}
+              title="Spotify Two Point 0"
+              description="My family owns a farm in West Michigan, we produce Corn, Soybeans and Hay. This website is dedicated to our hay sales and includes functionality for hay purchases, invoicing and reservations based on current availability."
+              techstack="Front-end: Next.js | Back-end: Supabase"
+              link="https://github.com/ForgeSolutions-JBrenner/West-Michigan-Hay-2.0"
+              githubLink="https://westmichiganhay.com"
             />
           </Col>
 
@@ -57,7 +71,7 @@ function Projects() {
               githubLink="https://github.com/ForgeSolutions-JBrenner/spotify-clone-2.0-NextJs"
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
